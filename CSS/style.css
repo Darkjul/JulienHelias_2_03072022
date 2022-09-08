@@ -1,0 +1,587 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    max-width: 1700px;
+    margin: auto;
+}
+
+/* Header */
+
+header {
+    display: flex;
+}
+
+header a:hover {
+    font-weight: bold;
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+/* Nav */
+
+#logo {
+    margin-right: auto;
+    padding: 0px 20px;
+}
+
+nav,
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+}
+
+nav a {
+    padding: 30px 30px 0;
+
+}
+
+/* Recherche */
+
+#search {
+    padding: 0px 20px;
+    align-items: center;
+}
+
+#search form {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+
+#search form i {
+    background-color: #F2F2F2;
+    padding: 15px 15px;
+    border-radius: 10px 0 0 10px;
+
+}
+
+#search form input {
+    font-weight: bold;
+    border: 2px solid #f2f2f2;
+    margin-right: 1px;
+}
+
+#search form button {
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    padding: 15px 15px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#search .fas {
+    display: none;
+}
+
+/* Filtres */
+
+#global_filtre {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+#liste_filtre {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+#liste_filtre h3 {
+    padding: 0px 20px;
+}
+
+.filtre {
+    border: 2px solid #DEEBFF;
+    border-radius: 25px;
+}
+
+.filtre .fas {
+    background-color: #DEEBFF;
+    color: blue;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.filtre span {
+    font-weight: bold;
+    padding: 0px 20px;
+}
+
+.filtre:hover {
+    background-color: #a3c0eb;
+}
+
+/* Infos */
+
+#liste_info {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+
+}
+
+#liste_info .fas {
+    color: #0065FC;
+    border: 2px solid #DEEBFF;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+#liste_info p {
+    padding: 0px 20px;
+}
+
+/* Liste Hébergements */
+
+#log-liste {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#log-liste h2 {
+    padding: 0px 20px;
+}
+
+#log-liste #hebergement {
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+
+#log-liste .populaire {
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+
+#log-liste #hebergement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-basis: 66%;
+    padding: 1%;
+}
+
+#log-liste .populaire {
+    flex-basis: 33%;
+    padding: 1%;
+}
+
+#log-liste #hebergement article a {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 15px 10px;
+    height: 100%;
+}
+
+#hebergement a {
+    margin-top: 10px;
+}
+
+/* Logements Marseille */
+
+.mar-log-liste {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 1%;
+
+}
+
+.mar-log-liste p,
+.mar-log-liste h3 {
+    margin: 8px;
+}
+
+.mar-log-liste article {
+    flex-basis: 30%;
+}
+
+#log-liste .mar-log-liste article {
+    background-color: white;
+    padding: 3px;
+    border-radius: 20px;
+    height: 280px;
+    box-shadow: 0 0 10px #a3c0eb;
+    flex-grow: 1;
+}
+
+#log-liste .mar-log-liste img {
+    border-radius: 20px 20px 0px 0px;
+    padding: 5px 0px;
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    flex-grow: 1;
+}
+
+.bluestar {
+    color: #0065FC;
+}
+
+.greystar {
+    color: #F2F2F2;
+}
+
+/* Plus Populaires */
+
+.populaire .poptitre {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mar-log-pop article p {
+    margin: 0;
+}
+
+.description h3 {
+    margin: 10px 0 10px 0;
+}
+
+.description p:nth-child(2) {
+    flex-grow: 2;
+    align-items: flex-end;
+}
+
+.mar-log-pop article a {
+    display: flex;
+}
+
+.mar-log-pop article div {
+    flex-basis: 33%;
+}
+
+.mar-log-pop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 0px 20px;
+}
+
+#log-liste .mar-log-pop div {
+    display: flex;
+    background-color: white;
+    height: 180px;
+    padding: 5px;
+    flex-grow: 1;
+}
+
+#log-liste .mar-log-pop .image-pop {
+    border-radius: 20px 0px 0px 20px;
+}
+
+#log-liste .mar-log-pop .description {
+    border-radius: 0px 20px 20px 0px;
+}
+
+#log-liste .mar-log-pop img {
+    display: flex;
+    border-radius: 20px 0px 0px 20px;
+    padding: 0px;
+    height: 100%;
+    width: 35%;
+    object-fit: cover;
+    flex-grow: 1;
+
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+/* Activités Marseille */
+
+#activites {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 1.5%;
+}
+
+#activites h2 {
+    padding: 0px 20px;
+}
+
+
+#activites .mar-act-liste {
+    display: flex;
+    height: 500px;
+    gap: 15px;
+}
+
+.colactivite {
+    width: 25%;
+}
+
+.mar-act-liste div.colactivite {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#activites .mar-act-liste article {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    gap: 20px;
+    box-shadow: 0 0 10px #a3c0eb;
+}
+
+.mar-act-liste div.colactivite article {
+    height: 49%;
+    justify-content: space-between;
+
+}
+
+.mar-act-liste div.colactivite article img {
+    height: 50%;
+
+}
+
+#activites .mar-act-liste img {
+    border-radius: 20px 20px 0px 0px;
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    flex-grow: 1;
+
+}
+
+#activites .mar-act-liste a {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+}
+
+#activites .mar-act-liste h3 {
+    padding-left: 10px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 60px;
+}
+
+
+section ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+section li {
+    margin-right: 20px;
+}
+
+footer li {
+    margin-bottom: 5px;
+
+}
+
+footer a:hover {
+
+    color: #0065FC;
+}
+
+
+
+/* Media Querries */
+
+/* Version Tablette */
+
+@media screen and (max-width: 992px) {
+
+    /* Filtres Tablette */
+
+    #liste_filtre {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    #liste_filtre h3 {
+        align-self: auto;
+        margin-bottom: 15px;
+    }
+
+    .filtre {
+        margin: 0 15px 15px 0;
+    }
+
+    /* Liste Hébergements */
+
+    #log-liste {
+        flex-direction: column-reverse;
+    }
+
+    /* Activités */
+
+    .mar-act-liste {
+        flex-direction: column;
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+
+    .colactivite {
+        height: 250px;
+        width: auto;
+    }
+
+    .bloca2,
+    .bloca4 {
+        height: 500px;
+    }
+
+    /* Footer Tablette */
+
+    footer div {
+        padding: 15px;
+    }
+}
+
+/* Version Mobile */
+
+@media screen and (max-width: 768px) {
+
+    /* Header Mobile */
+
+    header {
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        margin: 0;
+
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    nav li {
+        width: 50%;
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 3px solid #f2f2f2;
+    }
+
+    nav li a {
+        padding: inherit;
+    }
+
+    nav li a:hover {
+        border-top: none;
+    }
+
+    nav li:hover {
+        border-bottom-color: #0065FC;
+    }
+
+    /* Recherche Mobile */
+
+    #search .fas {
+        color: inherit;
+        background-color: inherit;
+        display: inline;
+    }
+
+    #search {
+        margin: 30px 20px;
+    }
+
+    #search form {
+        margin: 35px 0 30px;
+    }
+
+    .searchbt {
+        border-radius: 15px;
+    }
+
+    .searchbt span {
+        display: none;
+    }
+
+    /* Filtres Mobile */
+
+    #liste_filtre {
+        margin-bottom: 12px;
+    }
+
+    /* Hebergements Marseille */
+
+    #log-liste #hebergement {
+        background-color: white;
+    }
+
+    .mar-log-liste {
+        flex-direction: column;
+    }
+
+    .mar-log-liste article {
+        flex-basis: unset;
+    }
+
+    /* Plus Populaire */
+
+    .mar-log-pop {
+        flex-direction: column;
+    }
+
+    /* Activités */
+
+    .colactivite {
+        height: 250px;
+        width: auto;
+    }
+
+    .bloca2,
+    .bloca4 {
+        height: 500px;
+    }
+
+    /* Footer Mobile */
+
+    footer {
+        flex-direction: column;
+        padding: 45px 30px;
+    }
+
+    footer div {
+        padding: 0;
+    }
+}
